@@ -19,6 +19,13 @@ FILE_NAME="filewatcherd-node_1.0.0.tar.gz"
 
 echo "Uploading \"$FILE_NAME\""
 
-ssh genie.codewind@projects-storage.eclipse.org rm -rf /home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH
-ssh genie.codewind@projects-storage.eclipse.org mkdir -p /home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH
-scp -r ${WORKSPACE}/uploads/$FILE_NAME genie.codewind@projects-storage.eclipse.org:/home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH
+#ssh genie.codewind@projects-storage.eclipse.org rm -rf /home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH
+ssh genie.codewind@projects-storage.eclipse.org rm -rf /home/data/httpd/download.eclipse.org/codewind/codewind-filewatchers/Filewatcherd-TypeScript/snapshots
+
+#ssh genie.codewind@projects-storage.eclipse.org mkdir -p /home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH
+ssh genie.codewind@projects-storage.eclipse.org mkdir -p /home/data/httpd/download.eclipse.org/codewind/codewind-filewatchers/Filewatcherd-TypeScript/snapshots
+
+#scp -r ${WORKSPACE}/uploads/Filewatcherd-TypeScript/snapshots/$FILE_NAME genie.codewind@projects-storage.eclipse.org:/home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH
+scp -r ${WORKSPACE}/uploads/Filewatcherd-TypeScript/snapshots/$FILE_NAME genie.codewind@projects-storage.eclipse.org:/home/data/httpd/download.eclipse.org/codewind/codewind-filewatchers/Filewatcherd-TypeScript/snapshots
+
+
