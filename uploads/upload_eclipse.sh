@@ -15,24 +15,16 @@
 # $artifact_name must be set and the file it points to must be in the working directory
 
 DOWNLOADSITE_PATH="milestone/0.2.0/repository"
-#FILE_NAME="codewind-0.2.0.zip"
+FILE_PATH="milestone/0.2.0"
+FILE_NAME="codewind-0.2.0.zip"
 
 echo "Uploading \"$DOWNLOADSITE_PATH\""
 
 #ssh genie.codewind@projects-storage.eclipse.org rm -rf /home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH
-ssh genie.codewind@projects-storage.eclipse.org mkdir -p /home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH
 scp -r ${WORKSPACE}/uploads/eclipse/repository genie.codewind@projects-storage.eclipse.org:/home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH
 
-#ssh genie.codewind@projects-storage.eclipse.org rm -rf /home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH
-
-
-#ssh genie.codewind@projects-storage.eclipse.org rm -f /home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH/$FILE_NAME
-#ssh genie.codewind@projects-storage.eclipse.org rm -rf /home/data/httpd/download.eclipse.org/codewind/codewind-filewatchers/Filewatcherd-TypeScript/snapshots
-
-#ssh genie.codewind@projects-storage.eclipse.org mkdir -p /home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH
-#ssh genie.codewind@projects-storage.eclipse.org mkdir -p /home/data/httpd/download.eclipse.org/codewind/milestone/0.2.0/buildArtifacts
-
-#scp -r ${WORKSPACE}/uploads/Filewatcherd-TypeScript/snapshots/$FILE_NAME genie.codewind@projects-storage.eclipse.org:/home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH
-#scp -r ${WORKSPACE}/uploads/Filewatcherd-TypeScript/snapshots/$FILE_NAME genie.codewind@projects-storage.eclipse.org:/home/data/httpd/download.eclipse.org/codewind/milestone/0.2.0/buildArtifacts
-
+echo "Uploading \"$FILE_NAME\""
+ 
+ssh genie.codewind@projects-storage.eclipse.org rm -f /home/data/httpd/download.eclipse.org/codewind/$FILE_PATH/$FILE_NAME
+scp ${WORKSPACE}/uploads/eclipse/0.2.0/$FILE_NAME genie.codewind@projects-storage.eclipse.org:/home/data/httpd/download.eclipse.org/codewind/$FILE_PATH/$FILE_NAME
 
