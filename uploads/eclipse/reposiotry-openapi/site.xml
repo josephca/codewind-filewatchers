@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<site>
+<feature id="org.eclipse.codewind.openapi.feature" url="features/org.eclipse.codewind.openapi.feature_0.2.0.v201906251624.jar" version="0.2.0.v201906251624">
+<category name="OpenAPI Tools"/>
+</feature>
+<category-def label="OpenAPI Tools" name="OpenAPI Tools">
+<description>Tools for working with Codewind applications in Eclipse</description>
+</category-def>
+</site>

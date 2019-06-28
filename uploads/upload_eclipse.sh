@@ -19,7 +19,7 @@ DOWNLOADSITE_PATH="milestone/0.2.0/repository"
 
 echo "Uploading \"$DOWNLOADSITE_PATH\""
 
-ssh genie.codewind@projects-storage.eclipse.org rm -rf /home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH
+#ssh genie.codewind@projects-storage.eclipse.org rm -rf /home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH
 ssh genie.codewind@projects-storage.eclipse.org mkdir -p /home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH
 scp -r ${WORKSPACE}/uploads/eclipse/repository genie.codewind@projects-storage.eclipse.org:/home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH
 
