@@ -25,6 +25,6 @@ FILE_NAME="codewind-0.2.0.zip"
 
 echo "Uploading \"$FILE_NAME\""
  
-#ssh genie.codewind@projects-storage.eclipse.org rm -f /home/data/httpd/download.eclipse.org/codewind/$FILE_PATH/$FILE_NAME
+ssh genie.codewind@projects-storage.eclipse.org rm -f /home/data/httpd/download.eclipse.org/codewind/$FILE_PATH/$FILE_NAME
 scp ${WORKSPACE}/uploads/eclipse/0.2.0/$FILE_NAME genie.codewind@projects-storage.eclipse.org:/home/data/httpd/download.eclipse.org/codewind/$FILE_PATH/$FILE_NAME
 
