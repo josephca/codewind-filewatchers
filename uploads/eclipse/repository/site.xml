@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<site>
+<feature id="org.eclipse.codewind" url="features/org.eclipse.codewind_0.2.0.v201906281516.jar" version="0.2.0.v201906281516">
+<category name="Codewind"/>
+</feature>
+<category-def label="Codewind" name="Codewind">
+<description>Tools for working with Codewind applications in Eclipse</description>
+</category-def>
+</site>
