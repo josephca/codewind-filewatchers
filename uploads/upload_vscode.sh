@@ -18,9 +18,9 @@ DOWNLOADSITE_PATH="milestone/0.2.0"
 FILE_NAME="codewind-0.2.0.vsix"
 FILE_NAME_THEIA="codewind-theia-0.2.0.vsix"
 
-echo "Uploading \"$FILE_NAME\""
-ssh genie.codewind@projects-storage.eclipse.org rm -f /home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH/$FILE_NAME
-scp ${WORKSPACE}/uploads/vscode/0.2.0/$FILE_NAME genie.codewind@projects-storage.eclipse.org:/home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH/$FILE_NAME
+#echo "Uploading \"$FILE_NAME\""
+#ssh genie.codewind@projects-storage.eclipse.org rm -f /home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH/$FILE_NAME
+#scp ${WORKSPACE}/uploads/vscode/0.2.0/$FILE_NAME genie.codewind@projects-storage.eclipse.org:/home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH/$FILE_NAME
 
 echo "Uploading \"$FILE_NAME_THEIA\""
 ssh genie.codewind@projects-storage.eclipse.org rm -f /home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH/$FILE_NAME_THEIA
