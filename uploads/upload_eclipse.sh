@@ -18,13 +18,13 @@ DOWNLOADSITE_PATH="milestone/0.2.0/repository"
 FILE_PATH="milestone/0.2.0"
 FILE_NAME="codewind-0.2.0.zip"
 
-echo "Uploading \"$DOWNLOADSITE_PATH\""
+#echo "Uploading \"$DOWNLOADSITE_PATH\""
 
 #ssh genie.codewind@projects-storage.eclipse.org rm -rf /home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH
-scp -r ${WORKSPACE}/uploads/eclipse/repository genie.codewind@projects-storage.eclipse.org:/home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH
+#scp -r ${WORKSPACE}/uploads/eclipse/repository genie.codewind@projects-storage.eclipse.org:/home/data/httpd/download.eclipse.org/codewind/$DOWNLOADSITE_PATH
 
 echo "Uploading \"$FILE_NAME\""
  
-ssh genie.codewind@projects-storage.eclipse.org rm -f /home/data/httpd/download.eclipse.org/codewind/$FILE_PATH/$FILE_NAME
+#ssh genie.codewind@projects-storage.eclipse.org rm -f /home/data/httpd/download.eclipse.org/codewind/$FILE_PATH/$FILE_NAME
 scp ${WORKSPACE}/uploads/eclipse/0.2.0/$FILE_NAME genie.codewind@projects-storage.eclipse.org:/home/data/httpd/download.eclipse.org/codewind/$FILE_PATH/$FILE_NAME
 
