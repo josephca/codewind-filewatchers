@@ -25,6 +25,7 @@
 
 echo "Testing cleaner..."
  
+chmod 755 ./cleaner/BuildCleaner-0.0.1-SNAPSHOT.jar
 java -jar ./cleaner/BuildCleaner-0.0.1-SNAPSHOT.jar "genie.codewind" "projects-storage.eclipse.org"
  
 #ssh genie.codewind@projects-storage.eclipse.org rm -f /home/data/httpd/download.eclipse.org/codewind/$FILE_PATH/$FILE_NAME
