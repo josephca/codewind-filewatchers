@@ -26,7 +26,8 @@
 echo "Testing cleaner 1..."
  
 chmod 755 ${WORKSPACE}/uploads/cleaner/BuildCleaner-0.0.1-SNAPSHOT.jar
-java -jar ${WORKSPACE}/uploads/cleaner/BuildCleaner-0.0.1-SNAPSHOT.jar "genie.codewind" "projects-storage.eclipse.org"
+#java -jar ${WORKSPACE}/uploads/cleaner/BuildCleaner-0.0.1-SNAPSHOT.jar "genie.codewind" "projects-storage.eclipse.org"
+java -jar ${WORKSPACE}/uploads/cleaner/BuildCleaner-0.0.1-SNAPSHOT.jar "${WORKSPACE}/uploads/cleaner/setup.yaml"
  
 #ssh genie.codewind@projects-storage.eclipse.org rm -f /home/data/httpd/download.eclipse.org/codewind/$FILE_PATH/$FILE_NAME
 #scp ${WORKSPACE}/uploads/eclipse/0.2.0/$FILE_NAME genie.codewind@projects-storage.eclipse.org:/home/data/httpd/download.eclipse.org/codewind/$FILE_PATH/$FILE_NAME
